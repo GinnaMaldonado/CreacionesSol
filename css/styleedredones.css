@@ -1,0 +1,233 @@
+body {
+    font-family: 'Bad Script', cursive; /* Aplica la fuente a todo el cuerpo */
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* Estilos del Header */
+header {
+    background-color: #FAC0C0; /* Color rosa pastel */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header .logo-container img {
+    width: 25%; /* Ajustar el tamaño del logo */
+    height: auto;
+    margin-right: 10px;
+}
+
+header .logo-container h1 {
+    font-size: 30px;
+    color: #000;
+}
+
+/* Menú */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #FAC0C0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: rgb(231, 142, 231);
+}
+
+.intro-text {
+    font-size: 25px;
+    text-align: center;
+    color: #444;
+    margin: 25px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 80%;
+    border-bottom: 2px solid #FAC0C0;
+}
+
+/* Estilos del main y la estructura de filtro + productos */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 30px;
+}
+
+/* Estilo general para el filtro */
+.filter-section {
+    padding: 8%;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 20%;
+    border-right: 2px solid #FAC0C0;
+}
+
+.filter-category, .filter-color, .filter-size {
+    margin-bottom: 15px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-group label {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Contenedor de productos */
+.product-gallery {
+    flex: 1;
+}
+
+.product-item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-name {
+    margin-top: 8px;
+    font-size: 1em;
+    color: #333;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+/* Información adicional */
+.info-precios-edredones-en-peluche-combinado-con-piel-de-conejo,
+.info-precios-edredones-en-genero {
+    padding: 6%;
+    background-color: #fff;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 50%;
+    margin: 20px auto;
+    border-top: 2px solid #FAC0C0;
+    text-align: center;
+    display: block;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #FAC0C0;
+    color: #000;
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #FAC0C0;
+    color: #000;
+    text-align: left;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer .footer-content h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+footer .footer-content p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .filter-section {
+        width: 100%;
+        margin-bottom: 20px;
+        border-right: none;
+        border-bottom: 2px solid #FAC0C0;
+    }
+
+    .product-container {
+        justify-content: center;
+    }
+
+    .product-item {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-section {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .product-item {
+        width: 100%;
+    }
+
+    .product-name {
+        font-size: 14px;
+    }
+}
